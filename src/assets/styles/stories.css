@@ -1,0 +1,163 @@
+.stories-carousel {
+	padding: 75px 0;
+	position: relative;
+	overflow: hidden;
+	height: 800px;
+	background-color: #fbfbfb;
+}
+
+@media screen and (max-width: 980px) {
+	.stories-carousel {
+		height: 820px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.stories-carousel {
+		height: 950px;
+	}
+}
+
+.hacker-stories__container {
+	position: absolute;
+	left: 50%;
+	margin: 25px 0;
+}
+
+.hacker-stories__container .hacker-story {
+	position: absolute;
+	top: 0;
+	width: 500px;
+	/* padding: 0 20px; */
+	transition: left .8s cubic-bezier(.19,1,.22,1), opacity .8s cubic-bezier(.19,1,.22,1);
+}
+
+@media screen and (max-width: 980px) {
+	.hacker-stories__container .hacker-story {
+		width: 425px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hacker-stories__container .hacker-story {
+		width: 90vw;
+		max-width: 280px;
+	}
+}
+
+.hacker-story .thumb {
+	text-align: center;
+}
+
+.hacker-story .thumb img {
+	min-height: 250px;
+	max-height: 250px;
+}
+
+.hacker-story .progress-bar {
+	margin: 10px 0;
+	height: 5px;
+	width: 0;
+	background-color: rgb(136,194,229);
+	border-radius: 2.5px;
+}
+
+.hacker-story .hacker-details {
+	margin: 30px 0 20px 0;
+}
+
+.hacker-story p {
+	color: #555;
+}
+
+.hacker-story--focus {
+	left: -250px;
+}
+
+@media screen and (max-width: 980px) {
+	.hacker-story--focus {
+		left: -212.5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hacker-story--focus {
+		left: -140px;
+	}
+}
+
+.hacker-story--focus .thumb {
+	opacity: 1;
+}
+
+.hacker-story--focus .body {
+	opacity: 1;
+}
+
+.hacker-story--focus .progress-bar {
+	animation: progress 10s linear backwards;
+}
+
+@keyframes progress {
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+.hacker-story--previous {
+	left: 370px;
+}
+
+@media screen and (max-width: 980px) {
+	.hacker-story--previous {
+		left: 232.5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hacker-story--previous {
+		left: 160px;
+	}
+}
+
+.hacker-story--next {
+	left: -870px;
+}
+
+@media screen and (max-width: 980px) {
+	.hacker-story--next {
+		left: -657.5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hacker-story--next {
+		left: -440px;
+	}
+}
+
+.hacker-story--previous .thumb, .hacker-story--next .thumb {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.hacker-story--previous .thumb:hover, .hacker-story--next .thumb:hover {
+	opacity: 0.7;
+}
+
+.hacker-story--previous .body, .hacker-story--next .body {
+	opacity: 0;
+}
+
+.hacker-story--hidden-left {
+	left: -200vw;
+	opacity: 0;
+}
+
+.hacker-story--hidden-right {
+	left: 200vw;
+	opacity: 0;
+}

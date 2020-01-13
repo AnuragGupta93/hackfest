@@ -1,0 +1,100 @@
+.schedule {
+	padding: 75px 0 40px 0;
+}
+
+.schedule .division {
+	margin: 30px 20px;
+}
+
+.schedule__container {
+	border: 1px solid #eee;
+}
+
+.schedule__days {
+	background-color: #ffffff;
+	padding: 10px 20px;
+}
+
+.day-switch {
+	background-color: #fff;
+	margin: 0 7px;
+	padding: 5px 20px;
+	border: 2px solid #fff;
+	border-radius: 19px;
+	cursor: pointer;
+	color: #222;
+	letter-spacing: 1px;
+}
+
+.day-switch.active {
+	border: 2px solid #222;
+}
+
+.day-switch:hover:not(.active) {
+	border: 2px solid #777;
+	outline: 0;
+}
+
+.schedule__timeline {
+	background-color: #fbfbfb;
+	padding: 20px 50px 0 50px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+}
+
+.schedule__timeline-track {
+	height: 50px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
+.schedule__timeline-hour-label, .schedule__timeline-track-item {
+	position: absolute;
+	top: 0;
+}
+
+.schedule__timeline-track-item {
+	padding: 10px 0;
+}
+
+.schedule__timeline-track-item:hover, .schedule__timeline-track-item:focus {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.schedule__timeline-track-item h4 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.schedule__timeline-hour-label {
+	color: rgba(0, 0, 0, 0.7);
+	padding: 13px 0;
+}
+
+.time-bar {
+	position: relative;
+	width: 100%;
+	margin-top: 4px;
+	height: 2px;
+}
+
+.time-endpoints {
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	top: -3px;
+}
+
+.time-endpoints.start {
+	left: -4px;
+}
+
+.time-endpoints.end {
+	right: -4px;
+}

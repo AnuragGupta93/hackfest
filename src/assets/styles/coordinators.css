@@ -1,0 +1,45 @@
+.coordinators {
+	padding: 75px 0;
+}
+
+.coordinators h2 {
+	margin-bottom: 25px;
+}
+
+.coordinators .member {
+    max-width: 400px;
+	width: 100%;
+	margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.coordinators .member img {
+    width: 120px;
+    height: 120px;
+    margin: 0 25px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.4);
+}
+
+.coordinators .member .detail {
+    flex: 1 1 0;
+}
+
+.coordinators .member .social-links {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 22px;
+}
+
+.coordinators .social-links a {
+	color: inherit;
+	margin: 3px 7px;
+}
+
+.coordinators .social-links a:hover, .coordinators .social-links a:focus {
+	color: #3366BB;
+}

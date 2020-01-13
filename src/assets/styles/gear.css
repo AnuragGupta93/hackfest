@@ -1,0 +1,16 @@
+.gear__container {
+	position: relative;
+	height: 0;
+}
+
+.gear {
+    position: absolute;
+	z-index: 1;
+	opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .gear {
+        display: none;
+    }
+}

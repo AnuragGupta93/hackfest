@@ -1,0 +1,23 @@
+div {
+	position: relative;
+}
+
+.preloader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	animation: pulse 0.3s ease 0.2s infinite alternate;
+}
+
+@keyframes pulse {
+	from{
+		width: 200px;
+		filter: brightness(50%);
+	}
+	to{
+		width: 210px;
+		filter: brightness(100%);
+	}
+}

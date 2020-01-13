@@ -1,0 +1,30 @@
+.scroll {
+    background:#fff;
+    border-radius: 100px;
+    width:40px; height: 60px;
+    position: fixed;
+    bottom: 30px;
+    left:50%;
+    margin:0 0 0 -15px;
+    display: block;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.2);
+}
+.scroll:after {
+    background:#ccc;
+    border-radius: 300px;
+    width:6px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left:50%;
+    margin:0 0 0 -3px;
+    display: block;
+    content:" "; -webkit-animation: wiggle 0.5s linear 0s infinite alternate;
+    -moz-animation: wiggle 0.5s linear 0s infinite alternate; -o-animation: wiggle 0.5s linear 0s infinite alternate;
+    animation: wiggle 0.5s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes wiggle {from { top: 10px; } to { top: 14px; }}
+@-moz-keyframes wiggle {from { top: 10px; } to { top: 14px; }}
+@-o-keyframes wiggle {from { top: 10px; } to { top: 14px; }}
+@keyframes wiggle {from { top: 10px; } to { top: 14px; }}

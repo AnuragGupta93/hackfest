@@ -1,0 +1,116 @@
+body {
+	font-family: Rubik, sans-serif;
+	scroll-behavior: smooth;
+}
+
+button {
+	/* font-family: 'Raleway', sans-serif; */
+}
+
+.container {
+    padding: 0 3%;
+}
+
+section {
+	margin: 0px 0;
+}
+
+.section-header{
+    font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.inner-body {
+	margin: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Start of PreLoader animation */
+.fade-enter {
+	opacity: 0;
+}
+
+.fade-enter-active {
+	opacity: 1;
+	animation: fade 0.5s ease forwards;
+}
+
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit-active {
+	opacity: 0;
+	animation: fade 1s ease backwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* End of PreLoader animation */
+
+/* Start of Modal */
+.modal-content__container {
+	padding: 10px;
+}
+
+.rodal,
+.rodal-mask {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: fixed !important;
+	padding: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.rodal-dialog {
+	display: flex;
+	margin: auto;
+	height: auto !important;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background-color: #fff;
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 1.25em;
+	border-radius: 0.3125em;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative !important;
+	width: 32em;
+	max-width: 100%;
+}
+/* End of Modal */

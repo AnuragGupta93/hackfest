@@ -1,0 +1,45 @@
+.sponsors {
+	padding: 75px 0;
+}
+
+.sponsors h2 {
+	margin-bottom: 50px;
+}
+
+.sponsors-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.sponsors-list a {
+	margin: 0 30px 30px;
+	height: 135px;
+}
+
+@media only screen and (max-width: 980px) {
+	.sponsors-list a {
+		margin: 0 15px;
+	}
+}
+
+.sponsors-list a img {
+	padding: 20px 0;
+	height: 100%;
+	opacity: 1;
+	transition: opacity .2s ease;
+}
+
+.sponsors-list a:hover img {
+	opacity: .55;
+}
+
+.more {
+	
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,61 @@
+.prizes {
+	padding: 75px 0;
+}
+
+.prizes h2 {
+	margin-bottom: 50px;
+}
+
+.prizes-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.prize-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 55px 15px 15px;
+	width: 300px;
+	background-color: #fbfbfb;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.16);
+}
+
+.prize-card:hover {
+	box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.16);
+}
+
+.prize-card .thumb {
+	position: absolute;
+	top: -50px;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.prize-card img {
+	height: 75px;
+}
+
+.prize-content {
+	padding: 50px 10px 10px;
+	margin: 10px;
+	font-size: 14px;
+	height: 100%;
+	justify-content: space-evenly
+}
+
+.prize-content ul {
+	list-style-type: square;
+	padding-left: 15px;
+}
+
+.prize-content li {
+	margin: 5px 0;
+}
