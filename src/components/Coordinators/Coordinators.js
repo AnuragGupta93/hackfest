@@ -1,64 +1,121 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import Member from './Member';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import ScrollableAnchor from "react-scrollable-anchor";
+import Member from "./Member";
 
-import '../../assets/styles/coordinators.css';
+import "../../assets/styles/coordinators.css";
 
-export default class Coordinators extends React.Component{
-	constructor(props){
+export default class Coordinators extends React.Component {
+	constructor(props) {
 		super(props);
 		this.state = {
 			windowHeight: 720
 		};
 	}
 
-	componentDidMount(){
+	componentDidMount() {
 		this.updateDimensions();
 		window.addEventListener("resize", this.updateDimensions);
 	}
 
 	updateDimensions = () => {
 		this.setState({ windowHeight: window.innerHeight });
-	}
+	};
 
-	componentWillUnmount(){
+	componentWillUnmount() {
 		window.removeEventListener("resize", this.updateDimensions);
 	}
 
-    render(){
-        return(
+	render() {
+		return (
 			<ScrollableAnchor id="coordinators">
-				<section className="coordinators" style={{ minHeight: this.state.windowHeight+'px' }}>
+				<section
+					className="coordinators"
+					style={{ minHeight: this.state.windowHeight + "px" }}
+				>
 					<Container>
 						<h2>Student Coordinators</h2>
 						<Row>
 							<Col md={6}>
-                                <Member image="./assets/images/coordinators/coordinator(5).jpeg" name="Abhishek Chattopadhyay" post="Sponsorship" fb="https://www.facebook.com/ABCAbhishek" linkedin="https://www.linkedin.com/in/abcabhishek/"/>
+								<Member
+									image="./assets/images/coordinators/coordinator_1.jpeg"
+									name="Mohit Tripathi"
+									post="Sponsorship Lead"
+									fb="https://www.facebook.com/gopalmt?ref=br_rs"
+									linkedin="https://www.linkedin.com/in/mohit-tripathi-718a5b54/"
+								/>
 							</Col>
 							<Col md={6}>
-                                <Member image="./assets/images/coordinators/coordinator(3).jpeg" name="Monosij Ghosh" post="Promotions" fb="https://www.facebook.com/monosij.ghosh.3" linkedin="https://www.linkedin.com/in/monosij-ghosh-5b3a8a141/"/>
-                            </Col>
+								<Member
+									image="./assets/images/coordinators/coordinator_2.jpeg"
+									name="Aditya Sharma"
+									post="Sponsorship Lead"
+									fb="https://www.facebook.com/ads1419"
+									linkedin="https://www.linkedin.com/in/aditya-sharma-363b1230/3"
+								/>
+							</Col>
 						</Row>
 						<Row>
 							<Col md={6}>
-								<Member image="./assets/images/coordinators/coordinator(1).jpeg" name="Amandeep Srivastava" post="Designing and Graphics" fb="https://www.facebook.com/aman.iitism" linkedin="https://www.linkedin.com/in/amandeep-srivastava-b2ba7b113/"/>
-                            </Col>
+								<Member
+									image="./assets/images/coordinators/coordinator_3.jpeg"
+									name="Dakshita Chaturvedi"
+									post="Content Lead"
+									fb="https://www.facebook.com/profile.php?id=100013040449732"
+									linkedin="https://www.linkedin.com/in/dakshita/"
+								/>
+							</Col>
 							<Col md={6}>
-                                <Member image="./assets/images/coordinators/coordinator(4).jpeg" name="Shobhit Mathur" post="Content Creation" fb="https://www.facebook.com/shobhit.mathur.9085" linkedin="https://www.linkedin.com/in/shobhit-mathur-49aa79123/"/>
+								<Member
+									image="./assets/images/coordinators/coordinator_4.jpeg"
+									name="Abhishek Rana"
+									post="Designing Lead"
+									fb="https://www.facebook.com/profile.php?id=100009437662065&ref=br_rs"
+									linkedin="https://www.linkedin.com/in/shobhit-mathur-49aa79123/"
+								/>
 							</Col>
 						</Row>
 						<Row>
 							<Col md={6}>
-                                <Member image="./assets/images/coordinators/coordinator(2).jpeg" name="Pritam Ghosh" post="Operations" fb="https://www.facebook.com/BlueHazardRony" linkedin="https://www.linkedin.com/in/bluehazard-ghosh/"/>
-                            </Col>
+								<Member
+									image="./assets/images/coordinators/coordinator_5.jpeg"
+									name="Nasir Sayyed"
+									post="Operations"
+									fb="https://www.facebook.com/NYSayyed"
+									linkedin="https://www.linkedin.com/in/nasir-sayyed-91a01213b/"
+								/>
+							</Col>
 							<Col md={6}>
-                                <Member image="./assets/images/coordinators/coordinator(6).jpeg" name="Pratyush Kesarwani" post="Operations" fb="https://www.facebook.com/pratyush.kesarwani" linkedin="https://www.linkedin.com/in/pratyush2311/"/>
+								<Member
+									image="./assets/images/coordinators/coordinator_6.jpeg"
+									name="Kamlesh Ranjan"
+									post="Operations"
+									fb="https://www.facebook.com/kamlesh.ranjan.18"
+									linkedin="https://www.linkedin.com/in/pratyush2311/"
+								/>
+							</Col>
+							<Col md={6}>
+								<Member
+									image="./assets/images/coordinators/coordinator_7.jpeg"
+									name="Kamini Kumari Rajput"
+									post="Promotion Lead"
+									fb="https://www.facebook.com/profile.php?id=100009323620435"
+									linkedin="https://www.linkedin.com/in/kamini-kumari-6b8835150/"
+								/>
+							</Col>
+							<Col md={6}>
+								<Member
+									image="./assets/images/coordinators/coordinator_8.jpeg"
+									name="Banipreet Raheja"
+									post="Promotion Lead"
+									fb="https://www.facebook.com/banipreet.raheja?ref=br_rs"
+									linkedin="https://www.linkedin.com/in/banipreet-raheja/"
+								/>
 							</Col>
 						</Row>
 					</Container>
 				</section>
 			</ScrollableAnchor>
-        );
-    }
+		);
+	}
 }
