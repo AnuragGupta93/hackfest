@@ -71,7 +71,6 @@ export default class Coordinators extends React.Component {
 									name="Abhishek Rana"
 									post="Designing Lead"
 									fb="https://www.facebook.com/profile.php?id=100009437662065&ref=br_rs"
-									linkedin="https://www.linkedin.com/in/shobhit-mathur-49aa79123/"
 								/>
 							</Col>
 						</Row>
@@ -91,7 +90,6 @@ export default class Coordinators extends React.Component {
 									name="Kamlesh Ranjan"
 									post="Operations"
 									fb="https://www.facebook.com/kamlesh.ranjan.18"
-									linkedin="https://www.linkedin.com/in/pratyush2311/"
 								/>
 							</Col>
 							<Col md={6}>

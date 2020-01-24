@@ -3,20 +3,16 @@ body {
 	scroll-behavior: smooth;
 }
 
-button {
-	/* font-family: 'Raleway', sans-serif; */
-}
-
 .container {
-    padding: 0 3%;
+	padding: 0 3%;
 }
 
 section {
 	margin: 0px 0;
 }
 
-.section-header{
-    font-size: 40px;
+.section-header {
+	font-size: 40px;
 	font-weight: bold;
 	margin-bottom: 30px;
 }

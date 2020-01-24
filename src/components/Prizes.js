@@ -30,7 +30,7 @@ export default class Prizes extends React.Component{
 			<ScrollableAnchor id="prizes">
 				<section className="prizes" style={{ minHeight: this.state.windowHeight+'px' }}>
 					<Container>
-						<h2 className="section-header">Prizes</h2>
+						<h2 className="section-header">Previous Year Prizes</h2>
 						<div className="prizes-list">
 							<div className="prize-card">
 								<div className="thumb">

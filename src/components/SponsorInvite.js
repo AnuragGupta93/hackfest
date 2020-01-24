@@ -37,7 +37,7 @@ export default class SponsorInvite extends React.Component{
 					<div className="modal-content__container">
 						<h5>Want to sponsor HackFest 2019?</h5>
 						<div>
-							E-mail us: <a href="mailto:contact@hackfest.tech">sponsor@hackfest.in</a>
+							E-mail us: <a href="mailto:contact@hackfest.tech">sponsor@hackfest.tech</a>
 						</div>
 						<div>
 							Contact us: <a href="tel:+91-9431516493">+91-9431516493</a>

@@ -10,7 +10,7 @@ const DatesTimeline = () => (
 				<div className="flag-wrapper">
 					<span className="hexa"></span>
 					<span className="flag">Registration starts</span>
-					<span className="time-wrapper"><span className="time">February 2<sup>st</sup></span></span>
+					<span className="time-wrapper"><span className="time">February 2<sup>nd</sup></span></span>
 				</div>
 				</div>
 			</li>
