@@ -20,7 +20,7 @@
     "font-awesome": "^4.7.0",
     "google-map-react": "^1.1.2",
     "google-maps-react": "^2.0.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "particles-bg": "^2.4.7",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
